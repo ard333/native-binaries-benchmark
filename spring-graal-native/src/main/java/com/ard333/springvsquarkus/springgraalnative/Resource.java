@@ -1,4 +1,4 @@
-package com.ard333.springvsquarkus;
+package com.ard333.springvsquarkus.springgraalnative;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

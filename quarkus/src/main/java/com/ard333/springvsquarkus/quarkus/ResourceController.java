@@ -1,4 +1,4 @@
-package com.ard333.springvsquarkus;
+package com.ard333.springvsquarkus.quarkus;
 
 import java.util.List;
 

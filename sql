@@ -22,3 +22,7 @@ CREATE INDEX resource_string_idx
     ON public.resource USING hash
     (resource_string)
     TABLESPACE pg_default;
+
+
+TRUNCATE resource;
+ALTER SEQUENCE resource_id_seq RESTART WITH 1;
