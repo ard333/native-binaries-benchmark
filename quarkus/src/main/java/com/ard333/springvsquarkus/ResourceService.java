@@ -21,13 +21,22 @@ public class ResourceService {
 	}
 
 	public List<Resource> findByResourceString(String resourceString) {
-		System.out.println(resourceString);
 		return resourceRepository.findByResourceString(resourceString);
 	}
 
 	@Transactional
 	public void create(Resource resource) {
 		resourceRepository.persist(resource);
+	}
+
+	@Transactional
+	public void update(Long id, Resource resource) {
+		Resource r = resourceRepository.findById(id);
+		if (r != null) {
+			r.setResourceString(resource.getResourceString());
+			r.setResourceText(resource.getResourceText());
+			resourceRepository.persist(r);
+		}
 	}
 
 }
