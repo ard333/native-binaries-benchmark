@@ -1,12 +1,44 @@
 [
 	{
-		"name": "com.ard333.springvsquarkus.springgraalnative.Resource",
+		"name": "app.main.model.Foo",
 		"allDeclaredConstructors": true,
 		"allDeclaredMethods": true
 	},
 	{
-		"name": "com.ard333.springvsquarkus.springgraalnative.ResourceRepository",
+		"name": "app.main.model.FooRepository",
 		"allDeclaredConstructors": true,
 		"allDeclaredMethods": true
-	}
+	},
+	{
+		"name": "org.hibernate.dialect.PostgreSQL10Dialect",
+		"allDeclaredConstructors": true,
+		"allDeclaredMethods": true
+	},
+	{
+                "name": "java.lang.management.ManagementFactory",
+                "allDeclaredConstructors": true,
+                "allDeclaredMethods": true
+        },
+        {
+                "name": "java.lang.management.RuntimeMXBean",
+                "allDeclaredConstructors": true,
+                "allDeclaredMethods": true
+        },
+	{
+		"name": "org.springframework.web.bind.annotation.PathVariable",
+		"allDeclaredConstructors": true,
+		"allDeclaredFields": true,
+		"allDeclaredMethods": true
+    	},
+	{
+		"name": "javax.persistence.Column",
+		"allDeclaredConstructors": true,
+		"allDeclaredMethods": true
+	},
+	{
+        "name": "org.springframework.web.bind.annotation.RequestMethod",
+        	"allDeclaredFields": true,
+		"allDeclaredConstructors": true,
+		"allDeclaredMethods": true
+    	}
 ]

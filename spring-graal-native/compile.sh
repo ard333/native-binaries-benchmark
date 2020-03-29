@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-ARTIFACT=spring-graal-native
-MAINCLASS=com.ard333.springvsquarkus.springgraalnative.Application
+ARTIFACT=vanilla-jpa
+MAINCLASS=app.main.SampleApplication
 VERSION=0.0.1.BUILD-SNAPSHOT
 FEATURE=../../spring-graal-native-feature-0.6.0.BUILD-SNAPSHOT.jar
 
@@ -31,11 +31,15 @@ echo "Compiling $ARTIFACT with $GRAALVM_VERSION"
   --verbose \
   --no-server \
   --no-fallback \
+  --enable-all-security-services \
   -H:+TraceClassInitialization \
+  -H:EnableURLProtocols=http \
   -H:Name=$ARTIFACT \
   -H:+ReportExceptionStackTraces \
   --allow-incomplete-classpath \
   --report-unsupported-elements-at-runtime \
+  --initialize-at-run-time=java.sql.DriverManager \
+  --initialize-at-build-time=org.springframework.boot.validation.MessageInterpolatorFactory \
   -DremoveUnusedAutoconfig=true \
   -cp $CP $MAINCLASS >> output.txt ; } 2>> output.txt
 
