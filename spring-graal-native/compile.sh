@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-ARTIFACT=vanilla-jpa
-MAINCLASS=app.main.SampleApplication
+ARTIFACT=spring-graal-native
+MAINCLASS=com.ard333.springvsquarkus.springgraalnative.Application
 VERSION=0.0.1.BUILD-SNAPSHOT
-FEATURE=../../spring-graal-native-feature-0.6.0.BUILD-SNAPSHOT.jar
+FEATURE=../../spring-graal-native-feature-0.6.0.BUILD-SNAPSHOT.jar:../../spring-graal-native-configuration-0.6.0.BUILD-SNAPSHOT.jar
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
@@ -29,6 +29,7 @@ GRAALVM_VERSION=`native-image --version`
 echo "Compiling $ARTIFACT with $GRAALVM_VERSION"
 { time native-image \
   --verbose \
+-Dverbose=true \
   --no-server \
   --no-fallback \
   --enable-all-security-services \

@@ -1,14 +1,20 @@
-package app.main.model;
+package com.ard333.springvsquarkus.springgraalnative;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Column;
 
 @Entity
 @Table(name = "resource", schema = "public")
-public class Foo {
+public class Resource implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -19,10 +25,10 @@ public class Foo {
 	@Column(name = "resource_string")
 	private String resourceString;
 
-	public Foo() {
+	public Resource() {
 	}
 
-	public Foo(Long id, String resourceText, String resourceString) {
+	public Resource(Long id, String resourceText, String resourceString) {
 		this.id = id;
 		this.resourceText = resourceText;
 		this.resourceString = resourceString;

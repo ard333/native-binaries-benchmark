@@ -1,13 +1,13 @@
-package app.main;
+package com.ard333.springvsquarkus.springgraalnative;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(proxyBeanMethods = false)
-public class SampleApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SampleApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
