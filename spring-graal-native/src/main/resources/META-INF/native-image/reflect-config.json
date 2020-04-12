@@ -6,6 +6,11 @@
         "allDeclaredMethods": true
     },
     {
+        "name": "com.ard333.springvsquarkus.springgraalnative.ResourceRepository",
+        "allDeclaredConstructors": true,
+        "allDeclaredMethods": true
+    },
+    {
         "name": "org.postgresql.PGProperty",
         "allDeclaredFields": true
     },
