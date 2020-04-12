@@ -1,4 +1,4 @@
-CREATE DATABASE "spring-vs-quarkus"
+CREATE DATABASE "spring_vs_quarkus"
     WITH 
     OWNER = postgres
     ENCODING = 'UTF8'

@@ -20,10 +20,6 @@ public class ResourceController {
 	@Autowired
 	private ResourceRepository resourceRepository;
 
-	public ResourceController(ResourceRepository resourceRepository) {
-		this.resourceRepository = resourceRepository;
-	}
-
 	@GetMapping("/{id}")
 	public ResponseEntity<?> findById(@PathVariable("id") Long id) {
 		return ResponseEntity.ok(resourceRepository.findById(id));
@@ -45,7 +41,7 @@ public class ResourceController {
 		return ResponseEntity.ok().build();
 	}
 
-	// @PutMapping("/{id}") //405 if using this
+	//@org.springframework.web.bind.annotation.PutMapping("/{id}") //405 if using this
 	@RequestMapping(method = RequestMethod.PUT, value = "/{id}")
 	public ResponseEntity<?> update(@PathVariable("id") Long id, @RequestBody Resource resource) {
 		Optional<Resource> r = resourceRepository.findById(id);
