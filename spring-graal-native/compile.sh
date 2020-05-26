@@ -3,7 +3,7 @@
 ARTIFACT=spring-graal-native
 MAINCLASS=com.ard333.springvsquarkus.springgraalnative.Application
 VERSION=0.0.1.BUILD-SNAPSHOT
-FEATURE=../../spring-graal-native-0.6.1.BUILD-SNAPSHOT.jar
+FEATURE=../../spring-graalvm-native-0.7.0.BUILD-SNAPSHOT.jar
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
@@ -37,7 +37,6 @@ echo "Compiling $ARTIFACT with $GRAALVM_VERSION"
   -H:Name=$ARTIFACT \
   -H:+ReportExceptionStackTraces \
   --initialize-at-run-time=java.sql.DriverManager \
-  --initialize-at-build-time=org.springframework.boot.validation.MessageInterpolatorFactory \
   -Dspring.graal.verbose=true \
   -Dspring.graal.remove-unused-autoconfig=true \
   -cp $CP $MAINCLASS >> output.txt ; } 2>> output.txt

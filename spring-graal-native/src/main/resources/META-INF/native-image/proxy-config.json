@@ -1,4 +1,7 @@
 [
     ["org.springframework.web.bind.annotation.PathVariable", "org.springframework.core.annotation.SynthesizedAnnotation"],
-    ["javax.persistence.Column", "org.springframework.core.annotation.SynthesizedAnnotation"]
+    ["javax.persistence.Column", "org.springframework.core.annotation.SynthesizedAnnotation"],
+    ["javax.persistence.Id", "org.springframework.core.annotation.SynthesizedAnnotation"],
+    ["javax.persistence.GeneratedValue", "org.springframework.core.annotation.SynthesizedAnnotation"],
+    ["javax.persistence.Transient", "org.springframework.core.annotation.SynthesizedAnnotation"]
 ]
