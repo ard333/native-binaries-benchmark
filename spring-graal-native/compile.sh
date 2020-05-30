@@ -3,7 +3,6 @@
 ARTIFACT=spring-graal-native
 MAINCLASS=com.ard333.springvsquarkus.springgraalnative.Application
 VERSION=0.0.1.BUILD-SNAPSHOT
-FEATURE=../../spring-graalvm-native-0.7.0.BUILD-SNAPSHOT.jar
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
@@ -13,7 +12,7 @@ rm -rf target
 mkdir -p target/native-image
 
 echo "Packaging $ARTIFACT with Maven"
-mvn -DskipTests package > target/native-image/output.txt
+mvn -ntp package > target/native-image/output.txt
 
 JAR="$ARTIFACT-$VERSION.jar"
 rm -f $ARTIFACT
@@ -23,7 +22,7 @@ jar -xvf ../$JAR >/dev/null 2>&1
 cp -R META-INF BOOT-INF/classes
 
 LIBPATH=`find BOOT-INF/lib | tr '\n' ':'`
-CP=BOOT-INF/classes:$LIBPATH:$FEATURE
+CP=BOOT-INF/classes:$LIBPATH
 
 GRAALVM_VERSION=`native-image --version`
 echo "Compiling $ARTIFACT with $GRAALVM_VERSION"
@@ -32,13 +31,15 @@ echo "Compiling $ARTIFACT with $GRAALVM_VERSION"
   --no-server \
   --no-fallback \
   --enable-all-security-services \
-  -H:EnableURLProtocols=http \
-  -H:+TraceClassInitialization \
   -H:Name=$ARTIFACT \
+  -H:+TraceClassInitialization \
   -H:+ReportExceptionStackTraces \
+  -H:+RemoveSaturatedTypeFlows \
   --initialize-at-run-time=java.sql.DriverManager \
-  -Dspring.graal.verbose=true \
-  -Dspring.graal.remove-unused-autoconfig=true \
+  --initialize-at-build-time=org.hibernate.internal.util.ReflectHelper \
+  -Dspring.native.remove-unused-autoconfig=true \
+  -Dspring.native.remove-yaml-support=true \
+  -Dspring.native.remove-jmx-support=true \
   -cp $CP $MAINCLASS >> output.txt ; } 2>> output.txt
 
 if [[ -f $ARTIFACT ]]
@@ -51,4 +52,3 @@ else
   printf "${RED}FAILURE${NC}: an error occurred when compiling the native-image.\n"
   exit 1
 fi
-

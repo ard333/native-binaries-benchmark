@@ -8,9 +8,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -27,7 +27,7 @@ public class ResourceController {
 
 	@GetMapping("/by-page/{page}/{size}")
 	public ResponseEntity<?> findByPage(@PathVariable("page") Integer page, @PathVariable("size") Integer size) {
-		return ResponseEntity.ok(resourceRepository.findAll(PageRequest.of(page - 1, size)));
+		return ResponseEntity.ok(resourceRepository.findAll(PageRequest.of(page - 1, size)).getContent());
 	}
 
 	@GetMapping("/by-resource-string/{resourceString}")
@@ -41,8 +41,7 @@ public class ResourceController {
 		return ResponseEntity.ok().build();
 	}
 
-	//@org.springframework.web.bind.annotation.PutMapping("/{id}") //405 if using this
-	@RequestMapping(method = RequestMethod.PUT, value = "/{id}")
+	@PutMapping("/{id}")
 	public ResponseEntity<?> update(@PathVariable("id") Long id, @RequestBody Resource resource) {
 		Optional<Resource> r = resourceRepository.findById(id);
 		if (r.isPresent()) {

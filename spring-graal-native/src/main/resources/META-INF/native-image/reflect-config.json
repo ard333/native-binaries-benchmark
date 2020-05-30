@@ -1,11 +1,5 @@
 [
     {
-        "name": "com.ard333.springvsquarkus.springgraalnative.Resource",
-        "allDeclaredConstructors": true,
-        "allDeclaredFields": true,
-        "allDeclaredMethods": true
-    },
-    {
         "name": "org.postgresql.PGProperty",
         "allDeclaredFields": true
     },
@@ -15,28 +9,16 @@
         "allDeclaredMethods": true
     },
     {
-        "name": "java.lang.management.ManagementFactory",
-        "allDeclaredConstructors": true,
-        "allDeclaredMethods": true
+        "name": "org.hibernate.hql.internal.antlr.HqlSqlTokenTypes",
+        "allPublicFields": true
     },
     {
-        "name": "java.lang.management.RuntimeMXBean",
-        "allDeclaredConstructors": true,
-        "allDeclaredMethods": true
+        "name": "org.hibernate.hql.internal.antlr.HqlTokenTypes",
+        "allPublicFields": true
     },
     {
-        "name": "org.springframework.web.bind.annotation.PathVariable",
-        "allDeclaredConstructors": true,
-        "allDeclaredFields": true,
-        "allDeclaredMethods": true
-    },
-    {
-        "name": "javax.persistence.Column",
-        "allDeclaredConstructors": true,
-        "allDeclaredMethods": true
-    },
-    {
-        "name": "org.springframework.web.bind.annotation.RequestMethod",
-        "allDeclaredFields": true
+        "name": "org.hibernate.hql.internal.antlr.SqlTokenTypes",
+        "allPublicFields": true
     }
 ]
+
