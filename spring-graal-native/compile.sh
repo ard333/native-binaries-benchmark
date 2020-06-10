@@ -2,7 +2,7 @@
 
 ARTIFACT=spring-graal-native
 MAINCLASS=com.ard333.springvsquarkus.springgraalnative.Application
-VERSION=0.0.1.BUILD-SNAPSHOT
+VERSION=1.0.0
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
