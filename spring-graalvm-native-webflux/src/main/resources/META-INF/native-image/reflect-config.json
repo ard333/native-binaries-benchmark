@@ -180,7 +180,7 @@
   "methods":[{"name":"setupModule","parameterTypes":["com.fasterxml.jackson.databind.Module$SetupContext"] }]
 },
 {
-  "name":"com.sun.proxy.$Proxy54",
+  "name":"com.sun.proxy.$Proxy53",
   "methods":[
     {"name":"addNamedEntityGraph","parameterTypes":["java.lang.String","javax.persistence.EntityGraph"] }, 
     {"name":"addNamedQuery","parameterTypes":["java.lang.String","javax.persistence.Query"] }, 
@@ -211,7 +211,7 @@
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy73",
+  "name":"com.sun.proxy.$Proxy66",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[
@@ -567,10 +567,6 @@
   "allPublicMethods":true
 },
 {
-  "name":"java.lang.Module",
-  "allDeclaredMethods":true
-},
-{
   "name":"java.lang.Object",
   "allDeclaredMethods":true,
   "methods":[
@@ -580,14 +576,6 @@
 },
 {
   "name":"java.lang.Object[]"
-},
-{
-  "name":"java.lang.Runtime",
-  "methods":[{"name":"version","parameterTypes":[] }]
-},
-{
-  "name":"java.lang.Runtime$Version",
-  "methods":[{"name":"major","parameterTypes":[] }]
 },
 {
   "name":"java.lang.String",
@@ -628,15 +616,16 @@
   "allDeclaredMethods":true
 },
 {
+  "name":"java.lang.invoke.MethodHandles$Lookup",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
+},
+{
   "name":"java.lang.management.ManagementFactory",
   "methods":[{"name":"getRuntimeMXBean","parameterTypes":[] }]
 },
 {
   "name":"java.lang.management.RuntimeMXBean",
-  "methods":[
-    {"name":"getInputArguments","parameterTypes":[] }, 
-    {"name":"getName","parameterTypes":[] }
-  ]
+  "methods":[{"name":"getName","parameterTypes":[] }]
 },
 {
   "name":"java.lang.reflect.AnnotatedElement",
@@ -667,7 +656,7 @@
 },
 {
   "name":"java.nio.Bits",
-  "fields":[{"name":"UNALIGNED"}]
+  "methods":[{"name":"unaligned","parameterTypes":[] }]
 },
 {
   "name":"java.nio.Buffer",
@@ -675,6 +664,7 @@
 },
 {
   "name":"java.nio.DirectByteBuffer",
+  "fields":[{"name":"cleaner", "allowUnsafeAccess":true}],
   "methods":[{"name":"<init>","parameterTypes":["long","int"] }]
 },
 {
@@ -690,10 +680,6 @@
   "allPublicMethods":true
 },
 {
-  "name":"java.util.ArrayList",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
   "name":"java.util.EventListener",
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -706,20 +692,13 @@
   "name":"java.util.Properties"
 },
 {
-  "name":"java.util.ServiceLoader",
-  "methods":[{"name":"stream","parameterTypes":[] }]
-},
-{
-  "name":"java.util.ServiceLoader$Provider",
-  "methods":[{"name":"type","parameterTypes":[] }]
+  "name":"java.util.TimeZone",
+  "fields":[{"name":"defaultTimeZone"}]
 },
 {
   "name":"java.util.concurrent.Executor",
   "allDeclaredMethods":true,
   "allPublicMethods":true
-},
-{
-  "name":"java.util.concurrent.Flow$Publisher"
 },
 {
   "name":"java.util.concurrent.ThreadFactory",
@@ -825,8 +804,7 @@
   "name":"javax.xml.bind.Binder"
 },
 {
-  "name":"jdk.internal.misc.Unsafe",
-  "methods":[{"name":"getUnsafe","parameterTypes":[] }]
+  "name":"javax.xml.ws.WebServiceRef"
 },
 {
   "name":"org.aopalliance.intercept.MethodInterceptor",
@@ -851,10 +829,6 @@
 },
 {
   "name":"org.apache.logging.log4j.spi.ExtendedLogger"
-},
-{
-  "name":"org.apache.logging.log4j.util.internal.DefaultObjectInputFilter",
-  "allPublicMethods":true
 },
 {
   "name":"org.apache.logging.slf4j.MDCContextMap",
@@ -971,7 +945,7 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
-  "name":"org.hibernate.event.internal.EntityCopyNotAllowedObserver$$Lambda$962/0x0000000840769440",
+  "name":"org.hibernate.event.internal.EntityCopyNotAllowedObserver$$Lambda$897/553349660",
   "allPublicMethods":true
 },
 {
@@ -1052,6 +1026,10 @@
 },
 {
   "name":"org.hibernate.hql.internal.ast.tree.BinaryLogicOperatorNode",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.CountNode",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
@@ -1710,7 +1688,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration$$Lambda$498/0x00000008403aa840",
+  "name":"org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration$$Lambda$424/388357135",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"customize","parameterTypes":["org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder"] }]
@@ -1759,7 +1737,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$512/0x00000008403dd840",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$438/1390869998",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"customize","parameterTypes":["org.springframework.http.codec.CodecConfigurer"] }]
@@ -1771,7 +1749,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$513/0x00000008403ddc40",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$439/2141817446",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"customize","parameterTypes":["org.springframework.http.codec.CodecConfigurer"] }]
@@ -1994,7 +1972,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$477/0x00000008403a8840",
+  "name":"org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$403/1629687658",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"getDataSourcePoolMetadata","parameterTypes":["javax.sql.DataSource"] }]
@@ -3967,7 +3945,7 @@
   "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder"
 },
 {
-  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$546/0x000000084042d440",
+  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$459/489349054",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"resolveMediaTypes","parameterTypes":["org.springframework.web.server.ServerWebExchange"] }]
@@ -4280,13 +4258,6 @@
   "name":"org.synchronoss.cloud.nio.multipart.NioMultipartParser"
 },
 {
-  "name":"reactor.adapter.JdkFlowAdapter",
-  "methods":[
-    {"name":"flowPublisherToFlux","parameterTypes":["java.util.concurrent.Flow$Publisher"] }, 
-    {"name":"publisherToFlowPublisher","parameterTypes":["org.reactivestreams.Publisher"] }
-  ]
-},
-{
   "name":"reactor.core.publisher.Flux"
 },
 {
@@ -4322,13 +4293,20 @@
   ]
 },
 {
+  "name":"sun.misc.Cleaner",
+  "methods":[{"name":"clean","parameterTypes":[] }]
+},
+{
   "name":"sun.misc.Unsafe",
   "fields":[{"name":"theUnsafe"}],
   "methods":[
     {"name":"copyMemory","parameterTypes":["java.lang.Object","long","java.lang.Object","long","long"] }, 
     {"name":"getAndAddLong","parameterTypes":["java.lang.Object","long","long"] }, 
-    {"name":"getAndSetObject","parameterTypes":["java.lang.Object","long","java.lang.Object"] }, 
-    {"name":"invokeCleaner","parameterTypes":["java.nio.ByteBuffer"] }
+    {"name":"getAndSetObject","parameterTypes":["java.lang.Object","long","java.lang.Object"] }
   ]
+},
+{
+  "name":"sun.misc.VM",
+  "methods":[{"name":"maxDirectMemory","parameterTypes":[] }]
 }
 ]
