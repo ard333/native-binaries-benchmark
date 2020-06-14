@@ -2,8 +2,6 @@
   "resources":[
     {"pattern":"\\QMETA-INF/native/libnetty_transport_native_epoll_x86_64.so\\E"}, 
     {"pattern":"\\QMETA-INF/services/java.sql.Driver\\E"}, 
-    {"pattern":"\\QMETA-INF/services/jdk.vm.ci.hotspot.HotSpotJVMCIBackendFactory\\E"}, 
-    {"pattern":"\\QMETA-INF/services/jdk.vm.ci.services.JVMCIServiceLocator\\E"}, 
     {"pattern":"\\QMETA-INF/services/org.apache.logging.log4j.spi.Provider\\E"}, 
     {"pattern":"\\QMETA-INF/services/org.apache.logging.log4j.util.PropertySource\\E"}, 
     {"pattern":"\\QMETA-INF/spring-autoconfigure-metadata.properties\\E"}, 
@@ -18,7 +16,6 @@
     {"pattern":"\\Qcom/ard333/springvsquarkus/springgraalvmnative/ResourceService.class\\E"}, 
     {"pattern":"\\Qcom/ard333/springvsquarkus/springgraalvmnative/\\E"}, 
     {"pattern":"\\Qhibernate.properties\\E"}, 
-    {"pattern":"\\Qjavax/crypto/Cipher.class\\E"}, 
     {"pattern":"\\Qorg/hibernate/hibernate-configuration-3.0.dtd\\E"}, 
     {"pattern":"\\Qorg/hibernate/hibernate-mapping-3.0.dtd\\E"}, 
     {"pattern":"\\Qorg/hibernate/hibernate-mapping-4.0.xsd\\E"}, 
