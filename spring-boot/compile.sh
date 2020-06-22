@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-ARTIFACT=spring-boot-webflux
-MAINCLASS=com.ard333.nativebinariesbenchmark.springbootwebflux.Application
+ARTIFACT=spring-boot
+MAINCLASS=com.ard333.nativebinariesbenchmark.springboot.Application
 VERSION=1.0.0
 
 GREEN='\033[0;32m'

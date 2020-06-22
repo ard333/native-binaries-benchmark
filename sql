@@ -1,4 +1,4 @@
-CREATE DATABASE "quarkus_vs_spring"
+CREATE DATABASE "native_binaries_benchmark"
     WITH 
     OWNER = postgres
     ENCODING = 'UTF8'

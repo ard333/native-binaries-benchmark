@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ard333.nativebinariesbenchmark</groupId>
-	<artifactId>spring-boot-webflux</artifactId>
+	<artifactId>spring-boot</artifactId>
 	<version>1.0.0</version>
 
 	<parent>
@@ -26,7 +26,13 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-webflux</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.tomcat.embed</groupId>
+					<artifactId>tomcat-embed-websocket</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -79,7 +85,7 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<start-class>com.ard333.nativebinariesbenchmark.springbootwebflux.Application</start-class>
+		<start-class>com.ard333.nativebinariesbenchmark.springboot.Application</start-class>
 	</properties>
 
 	<build>
