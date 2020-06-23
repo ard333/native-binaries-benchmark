@@ -44,6 +44,6 @@ public class ResourceService {
 
 	@Transactional
 	public void delete(Long id) {
-		resourceRepository.deleteById(id);
+		if (resourceRepository.existsById(id)) resourceRepository.deleteById(id);
 	}
 }

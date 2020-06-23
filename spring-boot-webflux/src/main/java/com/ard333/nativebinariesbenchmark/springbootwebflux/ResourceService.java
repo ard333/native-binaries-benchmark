@@ -6,7 +6,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class ResourceService {
@@ -30,7 +29,6 @@ public class ResourceService {
 		resourceRepository.save(resource);
 	}
 
-	@Transactional
 	public void update(Long id, Resource resource) {
 		Optional<Resource> r = resourceRepository.findById(id);
 		if (r.isPresent()) {
@@ -40,9 +38,8 @@ public class ResourceService {
 		}
 	}
 
-	@Transactional
 	public void delete(Long id) {
-		resourceRepository.deleteById(id);
+		if (resourceRepository.existsById(id)) resourceRepository.deleteById(id);
 	}
 
 }

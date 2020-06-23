@@ -45,7 +45,7 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-graalvm</artifactId>
-			<version>5.4.15.Final</version>
+			<version>5.4.17.Final</version>
 		</dependency>
 
 		<dependency>

@@ -34,17 +34,20 @@ public class ResourceController {
 	}
 
 	@PostMapping()
-	public void create(@RequestBody Resource resource) {
+	public ResponseEntity<?> create(@RequestBody Resource resource) {
 		resourceService.create(resource);
+		return ResponseEntity.ok().build();
 	}
 
 	@PutMapping("/{id}")
-	public void update(@PathVariable("id") Long id, @RequestBody Resource resource) {
+	public ResponseEntity<?> update(@PathVariable("id") Long id, @RequestBody Resource resource) {
 		resourceService.update(id, resource);
+		return ResponseEntity.ok().build();
 	}
 
 	@DeleteMapping("/{id}")
-	public void delete(@PathVariable("id") Long id) {
+	public ResponseEntity<?> delete(@PathVariable("id") Long id) {
 		resourceService.delete(id);
+		return ResponseEntity.ok().build();
 	}
 }
