@@ -975,7 +975,7 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
-  "name":"org.hibernate.event.internal.EntityCopyNotAllowedObserver$$Lambda$976/0x00000008407abc40",
+  "name":"org.hibernate.event.internal.EntityCopyNotAllowedObserver$$Lambda$967/0x00000008407af840",
   "allPublicMethods":true
 },
 {
@@ -3995,7 +3995,7 @@
   "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder"
 },
 {
-  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$566/0x00000008404d1c40",
+  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$555/0x0000000840471c40",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"resolveMediaTypes","parameterTypes":["org.springframework.web.server.ServerWebExchange"] }]

@@ -454,12 +454,8 @@
   "name":"java.lang.String[]"
 },
 {
-  "name":"java.lang.Thread"
-},
-{
   "name":"java.lang.Throwable",
-  "allDeclaredFields":true,
-  "methods":[{"name":"getSuppressed","parameterTypes":[] }]
+  "allDeclaredFields":true
 },
 {
   "name":"java.lang.annotation.Annotation[]"
@@ -593,12 +589,6 @@
   "name":"java.util.concurrent.ThreadFactory",
   "allDeclaredMethods":true,
   "allPublicMethods":true
-},
-{
-  "name":"java.util.concurrent.ThreadPoolExecutor"
-},
-{
-  "name":"java.util.concurrent.ThreadPoolExecutor$Worker"
 },
 {
   "name":"java.util.function.Supplier",
@@ -855,23 +845,11 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
-  "name":"org.apache.coyote.AbstractProcessorLight"
-},
-{
-  "name":"org.apache.coyote.AbstractProtocol$ConnectionHandler"
-},
-{
   "name":"org.apache.coyote.UpgradeProtocol"
-},
-{
-  "name":"org.apache.coyote.http11.Http11InputBuffer"
 },
 {
   "name":"org.apache.coyote.http11.Http11NioProtocol",
   "allPublicMethods":true
-},
-{
-  "name":"org.apache.coyote.http11.Http11Processor"
 },
 {
   "name":"org.apache.logging.log4j.LogManager"
@@ -911,15 +889,6 @@
 {
   "name":"org.apache.tomcat.util.net.NioEndpoint",
   "allPublicMethods":true
-},
-{
-  "name":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor"
-},
-{
-  "name":"org.apache.tomcat.util.net.SocketProcessorBase"
-},
-{
-  "name":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable"
 },
 {
   "name":"org.aspectj.weaver.Advice"
@@ -1035,10 +1004,6 @@
   "name":"org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform",
   "allPublicMethods":true,
   "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
-  "name":"org.hibernate.event.internal.EntityCopyNotAllowedObserver$$Lambda$897/0x0000000840754040",
-  "allPublicMethods":true
 },
 {
   "name":"org.hibernate.event.service.internal.EventListenerRegistryImpl",

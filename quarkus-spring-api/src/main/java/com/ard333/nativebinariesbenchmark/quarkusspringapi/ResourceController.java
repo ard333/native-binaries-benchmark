@@ -1,4 +1,4 @@
-package com.ard333.nativebinariesbenchmark.springquarkusapi;
+package com.ard333.nativebinariesbenchmark.quarkusspringapi;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
