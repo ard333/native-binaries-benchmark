@@ -65,6 +65,23 @@
   "allDeclaredConstructors":true
 },
 {
+  "name":"com.ard333.nativebinariesbenchmark.springboot.ResourceService$$EnhancerBySpringCGLIB$$da32f44b",
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true,
+  "fields":[
+    {"name":"CGLIB$CALLBACK_FILTER"}, 
+    {"name":"CGLIB$FACTORY_DATA"}
+  ]
+},
+{
+  "name":"com.ard333.nativebinariesbenchmark.springboot.ResourceService$$EnhancerBySpringCGLIB$$da32f44b$$FastClassBySpringCGLIB$$5b7d4a71",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
+},
+{
+  "name":"com.ard333.nativebinariesbenchmark.springboot.ResourceService$$FastClassBySpringCGLIB$$5a980b20",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
+},
+{
   "name":"com.fasterxml.jackson.core.JsonGenerator"
 },
 {
@@ -431,6 +448,7 @@
   "name":"java.lang.Object",
   "allDeclaredMethods":true,
   "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
     {"name":"equals","parameterTypes":["java.lang.Object"] }, 
     {"name":"hashCode","parameterTypes":[] }
   ]
@@ -482,7 +500,12 @@
 },
 {
   "name":"java.lang.invoke.MethodHandles",
-  "allDeclaredMethods":true
+  "allDeclaredMethods":true,
+  "methods":[{"name":"privateLookupIn","parameterTypes":["java.lang.Class","java.lang.invoke.MethodHandles$Lookup"] }]
+},
+{
+  "name":"java.lang.invoke.MethodHandles$Lookup",
+  "methods":[{"name":"defineClass","parameterTypes":["byte[]"] }]
 },
 {
   "name":"java.lang.module.Configuration",
@@ -545,6 +568,10 @@
   "name":"java.sql.Wrapper",
   "allDeclaredMethods":true,
   "allPublicMethods":true
+},
+{
+  "name":"java.util.ArrayList",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"java.util.EventListener",
@@ -1301,6 +1328,10 @@
 },
 {
   "name":"org.springframework.aop.SpringProxy",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.springframework.aop.TargetClassAware",
   "allDeclaredMethods":true
 },
 {
@@ -3064,6 +3095,35 @@
 },
 {
   "name":"org.springframework.cache.interceptor.CacheAspectSupport"
+},
+{
+  "name":"org.springframework.cglib.core.MethodWrapper$MethodWrapperKey",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.springframework.cglib.core.MethodWrapper$MethodWrapperKey$$KeyFactoryByCGLIB$$552be97a",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cglib.proxy.Dispatcher"
+},
+{
+  "name":"org.springframework.cglib.proxy.Enhancer$EnhancerKey",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.springframework.cglib.proxy.Enhancer$EnhancerKey$$KeyFactoryByCGLIB$$4ce19e8f",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cglib.proxy.Factory",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.springframework.cglib.proxy.MethodInterceptor"
+},
+{
+  "name":"org.springframework.cglib.proxy.NoOp"
 },
 {
   "name":"org.springframework.context.ApplicationContext"
@@ -4955,5 +5015,12 @@
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true
+},
+{
+  "name":"sun.reflect.ReflectionFactory",
+  "methods":[
+    {"name":"getReflectionFactory","parameterTypes":[] }, 
+    {"name":"newConstructorForSerialization","parameterTypes":["java.lang.Class","java.lang.reflect.Constructor"] }
+  ]
 }
 ]

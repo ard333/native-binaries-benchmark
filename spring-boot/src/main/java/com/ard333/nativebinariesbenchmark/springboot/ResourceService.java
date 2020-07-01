@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class ResourceService {
@@ -25,10 +26,12 @@ public class ResourceService {
 		return resourceRepository.findByResourceString(resourceString, PageRequest.of(page - 1, size));
 	}
 
+	@Transactional
 	public void create(Resource resource) {
 		resourceRepository.save(resource);
 	}
 
+	@Transactional
 	public void update(Long id, Resource resource) {
 		Optional<Resource> r = resourceRepository.findById(id);
 		if (r.isPresent()) {
@@ -38,6 +41,7 @@ public class ResourceService {
 		}
 	}
 
+	@Transactional
 	public void delete(Long id) {
 		if (resourceRepository.existsById(id)) resourceRepository.deleteById(id);
 	}
